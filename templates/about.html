@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About this Website</title>
+    <!-- This line should go on every html page to load the main.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}" />
+</head>
+<body>
+    <!-- This line should be on every html page just after the <body> to display the menu. -->
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('list') }}">List All Students</a></li>
+        <li><a href="{{ url_for('new_student') }}">Add New Student</a></li>
+        <li><a href="{{ url_for('confirm_db') }}">Reset Database</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>    
+    </ul>
+    <h1>Information about this website.</h1>
+    <p>
+        <strong>Author:</strong> Clinton Daniel </br>
+        <strong>Description:</strong> This website was developed with Python Flask, HTML, CSS, and JavaScript
+    </p>
+</body>
+</html>

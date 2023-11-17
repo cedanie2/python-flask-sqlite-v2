@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my Flask App!</title>
+    <!-- This line should go on every html page to load the main.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}" />
+</head>
+<body>
+    <!-- This line should be on every html page just after the <body> to display the menu. -->
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('list') }}">List All Students</a></li>
+        <li><a href="{{ url_for('new_student') }}">Add New Student</a></li>
+        <li><a href="{{ url_for('confirm_db') }}">Reset Database</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+    </ul>
+    <h1>Hello Class! This is your First Web App using Python Flask!</h1>
+    <img src="/static/img/usf.png">
+    <p>Please read the following information: </p>
+    <blockquote>
+        The entire website is built using the Python Flask framework. 
+        The Flask app needs an <strong>app.py</strong> with all the Python code. 
+        Then, it needs a directory (folder) called <strong>templates</strong>. You
+        will put all of your .html files in the <strong>templates</strong> folder. 
+        You will place all of your <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Images</strong> in a folder called 
+        <strong>static.</strong> Inside of the <strong>static</strong> folder will be 3 additional 
+        subfolders called <strong>css</strong>, <strong>js</strong>, and <strong>img</strong>. 
+        This is where you will place your respective <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Images</strong>. 
+        Additionally, this app is using <strong>SQLite</strong> as a database. SQLite 
+        is a simple open source light weight database built for small 
+        applications. SQLite requires that you have a <strong>.db file</strong> in your 
+        project. The .db file is essentially the database. 
+    </blockquote>
+    <p>Here is a summary of your Python Flask directory structure:</p>
+    <table style="margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>Root directory</th>
+            <th>Folder</th>
+            <th>Files in Folder</th>
+            <th>Subfolder</th>
+            <th>Files in SubFolder</th>
+        </tr>
+        <tr>
+            <td>app.py</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>database.db</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>templates</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>All .html files</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>static</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>css</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>All .css files</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>img</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>All image files</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>js</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>All .js files</td>
+        </tr>
+    </table>
+</body>
+</html>

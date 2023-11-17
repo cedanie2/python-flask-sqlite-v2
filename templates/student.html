@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+   <title>Add a New Student</title>
+   <!-- This line should go on every html page to load the main.css -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}" />
+</head>
+<html>
+   <body>
+      <!-- This line should be on every html page just after the <body> to display the menu. -->
+         <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('list') }}">List All Students</a></li>
+            <li><a href="{{ url_for('new_student') }}">Add New Student</a></li>
+            <li><a href="{{ url_for('confirm_db') }}">Reset Database</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>Student Information</h3>
+         Name:<br>
+         <input type = "text" name = "nm" /></br>
+         
+         Address:<br>
+         <input type="text" name = "add" ><br>
+         
+         City:<br>
+         <input type = "text" name = "city" /><br>
+         
+         State:<br>
+         <input type = "text" name = "state" /><br>
+         
+         ZIP:<br>
+         <input type = "text" name = "zip" /><br><br>
+         <input type = "submit" value = "Submit" /><br>
+      </form>
+      
+   </body>
+</html>
